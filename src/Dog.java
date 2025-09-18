@@ -2,8 +2,14 @@
  * Represents a basic dog.
  */
 public class Dog {
-    private String speech = "Woof!";
-    private String name = "Clayton";
+    public static final String GENUS = "Canis";
+    private String speech;
+    private String name;
+
+    public Dog(String dogName, String dogSpeech){
+        speech = dogSpeech;
+        name = dogName;
+    }
 
     /**
      * Dog retrieves specified object
